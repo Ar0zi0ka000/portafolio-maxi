@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portafolio</title>
+
+    <meta
+      name="description"
+      content="Portafolio profesional de Maximiliano Navarrete (Ingeniería en Informática con mención en desarrollo). Proyectos, contacto y redes."
+    />
+    <meta name="author" content="Maximiliano Navarrete" />
+    <meta property="og:title" content="Portafolio — Maximiliano Navarrete" />
+    <meta
+      property="og:description"
+      content="Proyectos reales, buenas prácticas y contacto directo."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <link rel="preload" href="src/css/styles.css" as="style" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="icon" type="image/png" href="src/assets/img/favicon.png" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#">
+          <span class="brand-title">Maximiliano Navarrete</span>
+          <span class="brand-sub"
+            >Ingeniería en Informática — Mención Desarrollo</span
+          >
+        </a>
+        <nav class="nav">
+          <a href="#proyectos">Proyectos</a>
+          <a href="#sobre-mi">Sobre mí</a>
+          <a class="btn btn-primary" href="#contacto">Contactar</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <h1>
+              Construyo soluciones
+              <span class="resaltado">claras, escalables</span> y con
+              <span class="resaltado">buenas prácticas</span>.
+            </h1>
+            <p>
+              Desarrollo web, apps, Python y QA. Aquí verás mis trabajos
+              realizados y los que vienen. Todo versionado con Git y documentado
+              con cariño 🫶.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-secondary" href="#proyectos">Ver proyectos</a>
+              <a class="btn btn-link" href="#contacto">Escríbeme</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="section">
+        <div class="container">
+          <h2 class="section-title">Proyectos</h2>
+          <p class="section-sub">
+            Agrega o quita proyectos editando <code>data/projects.json</code> y
+            las imágenes en <code>src/assets/img/</code>.
+          </p>
+
+          <div id="projects-grid" class="grid"></div>
+        </div>
+      </section>
+
+      <section id="sobre-mi" class="section alt">
+        <div class="container about">
+          <div>
+            <h2 class="section-title">Sobre mí</h2>
+            <p>
+              Soy Ingeniero en Informática con mención en desarrollo. Me enfoco
+              en arquitectura limpia (SoC, DRY, SOLID), control de versiones con
+              Git, QA y documentación. Trabajo con Python, web, apps móviles y
+              Unity.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Web</li>
+              <li>Apps</li>
+              <li>Unity</li>
+              <li>SQL</li>
+              <li>Git/GitHub</li>
+              <li>QA</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>Lo que priorizo</h3>
+            <ul>
+              <li>Código mantenible y bien documentado</li>
+              <li>Arquitectura y patrones</li>
+              <li>Automatización y pruebas</li>
+              <li>Despliegues simples</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container contact">
+          <h2 class="section-title">Contacto</h2>
+          <p>¿Tienes una idea o proyecto? ¡Hablemos!</p>
+
+          <div class="contact-cards">
+            <a
+              class="contact-card"
+              href="mailto:maxi.tu_correo@example.com?subject=Consulta%20Portafolio&body=Hola%20Maximiliano,%20quiero%20hablar%20sobre..."
+            >
+              <div class="icon">@</div>
+              <div>
+                <h3>Correo</h3>
+                <p>maxi.tu_correo@example.com</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://github.com/Ar0zi0ka000"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="icon">GH</div>
+              <div>
+                <h3>GitHub</h3>
+                <p>@Ar0zi0ka000</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://www.linkedin.com/in/tu-usuario"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="icon">in</div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p>/in/tu-usuario</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://www.instagram.com/tu-usuario"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div class="icon">IG</div>
+              <div>
+                <h3>Instagram</h3>
+                <p>@tu-usuario</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span
+          >© <span id="year"></span> Maximiliano Navarrete — Todos los derechos
+          reservados.</span
+        >
+        <a href="#top">Volver arriba ↑</a>
+      </div>
+    </footer>
+
+    <script defer src="src/js/main.js"></script>
+  </body>
+</html>
